@@ -24,6 +24,8 @@ public class SimpleCsvRunner implements CommandLineRunner
 		int numRows = 6;
 		String filename = "output.csv";
 		
+		long startTime = System.nanoTime();
+		
 		if (args.length < 5)
 		{
 			System.out.println("Not all arguments passed, using defaults where needed. Arguments: #fields minlen maxlen #rows");
@@ -102,6 +104,9 @@ public class SimpleCsvRunner implements CommandLineRunner
 			// ...
 		}
 		
+		long endTime = System.nanoTime();
+		long timeElapsed = endTime - startTime;
+		System.out.println("Created " + numRows + " records in " + timeElapsed / 1000000 + "ms");
 	}
 
 }
