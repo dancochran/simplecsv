@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.mtb.ese.filetools</groupId>
 	<artifactId>simplecsv</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>simplecsv</name>
 	<description>Create csv files with random data</description>
 
